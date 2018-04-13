@@ -1,28 +1,32 @@
 package com.lista2;
 
+
 import java.util.Scanner;
 
 public class Exercicio4 {
-    public static void main (String[] args){
-            int v1;
-            int v2;
-            int v3;
-            String codigo;
+    public static void main (String[]args){
+        Scanner ler = new Scanner (System.in);
+        int x, y, z;
+        System.out.println("Digite o primeiro número");
+        x = ler.nextInt();
 
-        Scanner entrada;
-        entrada = new Scanner (System.in);
-        System.out.println("Digite o valor 1 ");
-        v1 = entrada.nextInt();
-        System.out.println("Digite o valor 2 ");
-        v2 = entrada.nextInt();
-        System.out.println("Digite o valor 3 ");
-        v3 = entrada.nextInt();
+        System.out.println("Digite o segundo número");
+        y = ler.nextInt();
 
-        codigo = entrada.nextLine();
+        System.out.println("Digite o terceiro número");
+        z = ler.nextInt();
 
-        if(codigo.equals("C")){
+        if(x >y ){
+            if(y > z){
+                System.out.println(x+ "-"+y+"-"+z);
+
+            } else if(x > z){
+                System.out.println();
+            }
 
         }
+
+
 
 
 
